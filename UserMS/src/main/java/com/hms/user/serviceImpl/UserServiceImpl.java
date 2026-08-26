@@ -15,43 +15,46 @@ import com.hms.user.service.ApiService;
 import com.hms.user.service.UserService;
 
 import jakarta.transaction.Transactional;
+import lombok.extern.slf4j.Slf4j;
 
 @Service
 @Transactional
+@Slf4j
 public class UserServiceImpl implements UserService {
-	
+
 	@Autowired
 	private UserReposistory userReposistory;
-	
+
 	@Autowired
 	private PasswordEncoder passwordEncoder;
-	
+
 	@Autowired
 	private ApiService apiService;
-	
 
 	@Override
-	public void registerUser(UserDto userDto) throws HmsException{
+	public void registerUser(UserDto userDto) throws HmsException {
 		Optional<User> opt = userReposistory.findByEmail(userDto.getEmail());
-		if(opt.isPresent()) {
+		if (opt.isPresent()) {
+			log.info("User already exists");
 			throw new HmsException("USER_ALREADY_EXISTS");
 		}
 		userDto.setPassword(passwordEncoder.encode(userDto.getPassword()));
 		Long profileId = apiService.addProfile(userDto).block();
-		System.out.println("--------->"+profileId);
 		userDto.setProfileId(profileId);
+
 		userReposistory.save(userDto.toEntity());
 	}
 
 	@Override
 	public String loginUser(LoginDto loginDto) throws HmsException {
-		User user = userReposistory.findByEmail(loginDto.getEmail()).orElseThrow(() -> new HmsException("USER_NOT_FOUND"));
-		if(!passwordEncoder.matches(loginDto.getPassword(), user.getPassword())) {
+		User user = userReposistory.findByEmail(loginDto.getEmail())
+				.orElseThrow(() -> new HmsException("USER_NOT_FOUND"));
+		if (!passwordEncoder.matches(loginDto.getPassword(), user.getPassword())) {
 			throw new HmsException("INVALID_CREDENTIAL");
 		}
 		user.setPassword(null);
-		
-		return null;	
+		log.info("User logged in successfully: {}",user.getId());
+		return null;
 	}
 
 	@Override
@@ -62,7 +65,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public void updateUser(UserDto userDto) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override

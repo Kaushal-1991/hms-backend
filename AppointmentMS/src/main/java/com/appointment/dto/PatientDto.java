@@ -1,0 +1,26 @@
+package com.appointment.dto;
+
+import java.time.LocalDate;
+
+import com.appointment.enums.BloodGroup;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class PatientDto {
+	private Long id;
+	private String name;
+	private String email;
+	private LocalDate dob;
+	private String phone;
+	private String address;
+	private String aadharNo;
+	private BloodGroup bloodGroup;
+	private String allergies;
+	private String chronicDiease;
+
+}
