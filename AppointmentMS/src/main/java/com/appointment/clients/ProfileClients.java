@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.appointment.dto.DoctorDto;
 import com.appointment.dto.PatientDto;
 
-@FeignClient(name="ProfileMs")
+@FeignClient(name="ProfileMs",url = "${profiles.url}")
 public interface ProfileClients {
    
 	@GetMapping("/profile/doctor/isExists/{id}")
