@@ -6,4 +6,5 @@ import com.appointment.entity.Appointment;
 
 public interface AppointmentReposistory extends JpaRepository<Appointment, Long>{
 
+	
 }
