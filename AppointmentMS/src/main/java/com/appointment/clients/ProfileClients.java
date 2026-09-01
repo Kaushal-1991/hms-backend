@@ -4,10 +4,11 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import com.appointment.config.FienClientInterceptor;
 import com.appointment.dto.DoctorDto;
 import com.appointment.dto.PatientDto;
 
-@FeignClient(name="ProfileMs",url = "${profiles.url}")
+@FeignClient(name = "ProfileMs", url = "${profiles.url}",configuration = FienClientInterceptor.class)
 public interface ProfileClients {
    
 	@GetMapping("/profile/doctor/isExists/{id}")
