@@ -4,6 +4,8 @@ import java.time.LocalDateTime;
 
 import com.appointment.entity.Appointment;
 import com.appointment.enums.Status;
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -18,6 +20,7 @@ public class AppointmentDto {
 	private Status status;
 	private String reason;
 	private String notes;
+	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 	private LocalDateTime appointmentTime;
 	
 	public Appointment toEntity() {

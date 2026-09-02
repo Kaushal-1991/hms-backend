@@ -1,5 +1,7 @@
 package com.appointment.service;
 
+import java.util.List;
+
 import com.appointment.dto.AppointmentDetails;
 import com.appointment.dto.AppointmentDto;
 import com.appointment.exception.HmsException;
@@ -11,4 +13,5 @@ public interface AppointmentService {
     void rescheduleAppointment(Long appointmentId,String newDateTime) throws HmsException;
     AppointmentDto getAppointmentDetails(Long appointmentId) throws HmsException;
     AppointmentDetails getAppointmentwithName(Long appointmentId) throws HmsException;
+    List<AppointmentDetails> getAppointmentByPatientId(Long patientId);
 }

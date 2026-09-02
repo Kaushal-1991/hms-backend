@@ -15,8 +15,9 @@ import com.appointment.clients.ProfileClients;
 import com.appointment.dto.AppointmentDetails;
 import com.appointment.dto.AppointmentDto;
 import com.appointment.exception.HmsException;
-import com.appointment.service.ApiService;
 import com.appointment.service.AppointmentService;
+
+import jakarta.validation.constraints.AssertFalse.List;
 
 @RestController
 @RequestMapping("/appointment")
@@ -25,9 +26,6 @@ public class AppointmentApi {
 	@Autowired
 	private AppointmentService appointmentService;
 
-	@Autowired
-	private ApiService apiService;
-	
 	@Autowired
 	private ProfileClients profileClients;
 
@@ -60,5 +58,10 @@ public class AppointmentApi {
 	@GetMapping("/get/details/{appointmentId}")
 	public ResponseEntity<AppointmentDetails> getAppointmentDetailsWithName(@PathVariable Long appointmentId) throws HmsException {
 		return new ResponseEntity<>(appointmentService.getAppointmentwithName(appointmentId), HttpStatus.OK);
+	}
+	
+	@GetMapping("/getAllPatientById/{patientId}")
+	public ResponseEntity<java.util.List<AppointmentDetails>> getAllPatientById(@PathVariable Long patientId){
+		return new ResponseEntity<>(appointmentService.getAppointmentByPatientId(patientId), HttpStatus.OK);
 	}
 }

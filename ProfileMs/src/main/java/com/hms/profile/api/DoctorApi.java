@@ -38,6 +38,7 @@ public class DoctorApi {
 	
 	@GetMapping("/get/{id}")
 	public ResponseEntity<DoctorDto> getDoctor(@PathVariable Long id) throws HmsException{
+		System.out.println("Patient records getting");
 		DoctorDto doctor = doctorService.getDoctorById(id);
 		return new ResponseEntity<>(doctor,HttpStatus.OK);
 	}

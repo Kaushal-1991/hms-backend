@@ -1,5 +1,8 @@
 package com.appointment.serviceIml;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,15 +23,13 @@ public class AppointmentServiceImpl implements AppointmentService {
 
 	@Autowired
 	private AppointmentReposistory appointmentReposistory;
-
-	@Autowired
-	private ApiService apiService;
 	
 	@Autowired
 	private ProfileClients profileClients;
 
 	@Override
 	public Long scheduleAppointment(AppointmentDto appointmentDto) throws HmsException {
+		appointmentDto.setStatus(Status.SCHEDULED);
 		return appointmentReposistory.save(appointmentDto.toEntity()).getId();
 	}
 
@@ -77,6 +78,15 @@ public class AppointmentServiceImpl implements AppointmentService {
 				appointmentDto.getAppointmentTime());
 		
 		return appointmentDetails;
+	}
+
+	@Override
+	public List<AppointmentDetails> getAppointmentByPatientId(Long patientId) {
+		return appointmentReposistory.findAllByPatientId(patientId).stream().map(appointment -> {
+			DoctorDto doctor = profileClients.getDoctor(appointment.getId());
+			appointment.setDoctorName(doctor.getName());
+			return appointment;
+		}).toList();
 	}
 
 }
