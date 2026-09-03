@@ -1,634 +1,153 @@
-2026-09-02T00:03:49.005-07:00  INFO 828 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T00:08:49.236-07:00  INFO 828 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T00:13:52.125-07:00  INFO 828 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T00:18:52.370-07:00  INFO 828 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T00:23:52.451-07:00  INFO 828 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T00:27:24.571-07:00  INFO 828 --- [UserMS] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2026-09-02T00:27:24.858-07:00  INFO 828 --- [UserMS] [Thread-9] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USERMS with eureka with status DOWN
-2026-09-02T00:27:24.862-07:00  INFO 828 --- [UserMS] [Thread-9] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1788334044861, current=DOWN, previous=UP]
-2026-09-02T00:27:24.878-07:00  INFO 828 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6.lan:UserMS:8080: registering service...
-2026-09-02T00:27:25.240-07:00  INFO 828 --- [UserMS] [Thread-9] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-09-02T00:27:25.339-07:00  INFO 828 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6.lan:UserMS:8080 - registration status: 204
-2026-09-02T00:27:25.504-07:00  INFO 828 --- [UserMS] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-09-02T00:27:25.809-07:00  INFO 828 --- [UserMS] [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-09-02T00:27:25.957-07:00  INFO 828 --- [UserMS] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2026-09-02T00:27:26.193-07:00  INFO 828 --- [UserMS] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2026-09-02T00:27:26.295-07:00  INFO 828 --- [UserMS] [Thread-9] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2026-09-02T00:27:29.301-07:00  INFO 828 --- [UserMS] [Thread-9] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2026-09-02T00:27:29.328-07:00  INFO 828 --- [UserMS] [Thread-9] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6.lan:UserMS:8080 - deregister  status: 200
-2026-09-02T00:27:29.330-07:00  INFO 828 --- [UserMS] [Thread-9] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2026-09-02T00:27:32.511-07:00  INFO 828 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Starting UserMsApplication using Java 17.0.7 with PID 828 (E:\STS-Projects\hms-backend\UserMS\target\classes started by KAUSAL in E:\STS-Projects\hms-backend\UserMS)
-2026-09-02T00:27:32.512-07:00 DEBUG 828 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Running with Spring Boot v3.4.1, Spring v6.2.1
-2026-09-02T00:27:32.512-07:00  INFO 828 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : No active profile set, falling back to 1 default profile: "default"
-2026-09-02T00:27:34.218-07:00  INFO 828 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-02T00:27:34.258-07:00  INFO 828 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
-2026-09-02T00:27:34.685-07:00  INFO 828 --- [UserMS] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2707a0a2-92f9-350c-99c6-6cb794af7cc4
-2026-09-02T00:27:35.037-07:00  INFO 828 --- [UserMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-09-02T00:27:35.039-07:00  INFO 828 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-09-02T00:27:35.040-07:00  INFO 828 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2026-09-02T00:27:35.267-07:00  INFO 828 --- [UserMS] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-09-02T00:27:35.267-07:00  INFO 828 --- [UserMS] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2744 ms
-2026-09-02T00:27:35.714-07:00  INFO 828 --- [UserMS] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-09-02T00:27:35.725-07:00  INFO 828 --- [UserMS] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-09-02T00:27:35.755-07:00  INFO 828 --- [UserMS] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-02T00:27:35.759-07:00  INFO 828 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2026-09-02T00:27:35.905-07:00  INFO 828 --- [UserMS] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71535946
-2026-09-02T00:27:35.906-07:00  INFO 828 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2026-09-02T00:27:35.911-07:00  WARN 828 --- [UserMS] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-09-02T00:27:35.912-07:00  INFO 828 --- [UserMS] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
-	Database driver: undefined/unknown
-	Database version: 8.0.46
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-09-02T00:27:36.047-07:00  INFO 828 --- [UserMS] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-09-02T00:27:36.159-07:00  INFO 828 --- [UserMS] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-09-02T00:27:36.552-07:00  INFO 828 --- [UserMS] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
-2026-09-02T00:27:36.628-07:00  WARN 828 --- [UserMS] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-09-02T00:27:37.780-07:00  INFO 828 --- [UserMS] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
-2026-09-02T00:27:38.749-07:00  INFO 828 --- [UserMS] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2026-09-02T00:27:39.022-07:00  INFO 828 --- [UserMS] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2026-09-02T00:27:39.189-07:00  WARN 828 --- [UserMS] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-09-02T00:27:39.376-07:00  INFO 828 --- [UserMS] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2026-09-02T00:27:39.392-07:00  INFO 828 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2026-09-02T00:27:39.398-07:00  INFO 828 --- [UserMS] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T00:27:39.402-07:00  INFO 828 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2026-09-02T00:27:39.402-07:00  INFO 828 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2026-09-02T00:27:39.403-07:00  INFO 828 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2026-09-02T00:27:39.403-07:00  INFO 828 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2026-09-02T00:27:39.403-07:00  INFO 828 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2026-09-02T00:27:39.403-07:00  INFO 828 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2026-09-02T00:27:39.404-07:00  INFO 828 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2026-09-02T00:27:39.521-07:00  INFO 828 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2026-09-02T00:27:39.522-07:00  INFO 828 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2026-09-02T00:27:39.523-07:00  INFO 828 --- [UserMS] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-09-02T00:27:39.524-07:00  INFO 828 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1788334059524 with initial instances count: 2
-2026-09-02T00:27:39.548-07:00  INFO 828 --- [UserMS] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERMS with eureka with status UP
-2026-09-02T00:27:39.549-07:00  INFO 828 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1788334059549, current=UP, previous=STARTING]
-2026-09-02T00:27:39.549-07:00  INFO 828 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080: registering service...
-2026-09-02T00:27:39.591-07:00  INFO 828 --- [UserMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2026-09-02T00:27:39.593-07:00  INFO 828 --- [UserMS] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
-2026-09-02T00:27:39.610-07:00  INFO 828 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080 - registration status: 204
-2026-09-02T00:27:40.570-07:00  INFO 828 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Started UserMsApplication in 8.962 seconds (process running for 7380.38)
-2026-09-02T00:27:40.581-07:00  INFO 828 --- [UserMS] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2026-09-02T00:29:11.137-07:00  INFO 828 --- [UserMS] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-09-02T00:29:11.145-07:00  INFO 828 --- [UserMS] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-09-02T00:29:11.194-07:00  INFO 828 --- [UserMS] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 49 ms
-2026-09-02T00:29:12.811-07:00  INFO 828 --- [UserMS] [http-nio-8080-exec-1] c.hms.user.serviceImpl.UserServiceImpl   : User already exists
-2026-09-02T00:29:13.087-07:00  WARN 828 --- [UserMS] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.hms.user.exception.HmsException: USER_ALREADY_EXISTS]
-2026-09-02T00:32:39.411-07:00  INFO 828 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T00:37:39.426-07:00  INFO 828 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T00:42:39.458-07:00  INFO 828 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T00:47:39.484-07:00  INFO 828 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T00:52:39.539-07:00  INFO 828 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T00:57:39.544-07:00  INFO 828 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T01:02:39.563-07:00  INFO 828 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T01:07:39.566-07:00  INFO 828 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T01:12:39.577-07:00  INFO 828 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T01:17:39.909-07:00  INFO 828 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T01:22:39.924-07:00  INFO 828 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T01:27:39.950-07:00  INFO 828 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T01:32:40.305-07:00  INFO 828 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T01:37:40.344-07:00  INFO 828 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T01:38:03.696-07:00  INFO 828 --- [UserMS] [RMI TCP Connection(225)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2026-09-02T01:38:03.806-07:00  INFO 828 --- [UserMS] [RMI TCP Connection(225)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USERMS with eureka with status DOWN
-2026-09-02T01:38:03.807-07:00  INFO 828 --- [UserMS] [RMI TCP Connection(225)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1788338283807, current=DOWN, previous=UP]
-2026-09-02T01:38:03.812-07:00  INFO 828 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080: registering service...
-2026-09-02T01:38:03.919-07:00  INFO 828 --- [UserMS] [RMI TCP Connection(225)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-09-02T01:38:04.027-07:00  INFO 828 --- [UserMS] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-09-02T01:38:04.126-07:00  INFO 828 --- [UserMS] [RMI TCP Connection(225)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-09-02T01:38:04.181-07:00  INFO 828 --- [UserMS] [RMI TCP Connection(225)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
-2026-09-02T01:38:04.210-07:00  INFO 828 --- [UserMS] [RMI TCP Connection(225)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
-2026-09-02T01:38:04.215-07:00  INFO 828 --- [UserMS] [RMI TCP Connection(225)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2026-09-02T01:38:04.250-07:00  INFO 828 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/USERMS": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/USERMS": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
-	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
-	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
-	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
-	... 21 more
+2026-09-03T00:04:42.113-07:00  INFO 10596 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Starting UserMsApplication using Java 17.0.7 with PID 10596 (E:\STS-Projects\hms-backend\UserMS\target\classes started by KAUSAL in E:\STS-Projects\hms-backend\UserMS)
+2026-09-03T00:04:42.121-07:00 DEBUG 10596 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-09-03T00:04:42.124-07:00  INFO 10596 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-09-03T00:04:42.254-07:00  INFO 10596 --- [UserMS] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-03T00:04:42.258-07:00  INFO 10596 --- [UserMS] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-03T00:04:45.446-07:00  INFO 10596 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-03T00:04:45.870-07:00  INFO 10596 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 399 ms. Found 1 JPA repository interface.
+2026-09-03T00:04:46.566-07:00  INFO 10596 --- [UserMS] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2707a0a2-92f9-350c-99c6-6cb794af7cc4
+2026-09-03T00:04:48.248-07:00  INFO 10596 --- [UserMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-09-03T00:04:48.276-07:00  INFO 10596 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-03T00:04:48.277-07:00  INFO 10596 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-09-03T00:04:48.425-07:00  INFO 10596 --- [UserMS] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-03T00:04:48.426-07:00  INFO 10596 --- [UserMS] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6166 ms
+2026-09-03T00:04:49.216-07:00  INFO 10596 --- [UserMS] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-03T00:04:49.370-07:00  INFO 10596 --- [UserMS] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-09-03T00:04:49.469-07:00  INFO 10596 --- [UserMS] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-03T00:04:50.232-07:00  INFO 10596 --- [UserMS] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-03T00:04:50.387-07:00  INFO 10596 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-03T00:04:51.639-07:00  WARN 10596 --- [UserMS] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08S01
+2026-09-03T00:04:51.639-07:00 ERROR 10596 --- [UserMS] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
 
-2026-09-02T01:38:04.252-07:00  WARN 828 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/USERMS": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-2026-09-02T01:38:04.271-07:00  INFO 828 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/USERMS": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/USERMS": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
-	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
-	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
-	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
-	... 22 more
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2026-09-03T00:04:51.641-07:00  WARN 10596 --- [UserMS] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
 
-2026-09-02T01:38:04.272-07:00  WARN 828 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/USERMS": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-2026-09-02T01:38:04.273-07:00  WARN 828 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080 - registration failed Cannot execute request on any known server
+org.hibernate.exception.JDBCConnectionException: unable to obtain isolated JDBC connection [Communications link failure
 
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.4.jar:2.0.4]
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828) ~[eureka-client-2.0.4.jar:2.0.4]
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.4.jar:2.0.4]
-	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.4.jar:2.0.4]
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-
-2026-09-02T01:38:04.337-07:00  WARN 828 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
-
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.4.jar:2.0.4]
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828) ~[eureka-client-2.0.4.jar:2.0.4]
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.4.jar:2.0.4]
-	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.4.jar:2.0.4]
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-
-2026-09-02T01:38:04.342-07:00  INFO 828 --- [UserMS] [RMI TCP Connection(225)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2026-09-02T01:38:04.366-07:00  INFO 828 --- [UserMS] [RMI TCP Connection(225)-127.0.0.1] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/USERMS/DESKTOP-97B0AF6:UserMS:8080": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/USERMS/DESKTOP-97B0AF6:UserMS:8080": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:100)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
-	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
-	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:668)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:625)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1368)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:584)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1361)
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
-	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72)
-	at jdk.internal.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262)
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
-	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
-	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
-	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
-	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
-	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
-	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
-	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
-	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
-	... 76 more
-
-2026-09-02T01:38:04.368-07:00  WARN 828 --- [UserMS] [RMI TCP Connection(225)-127.0.0.1] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/USERMS/DESKTOP-97B0AF6:UserMS:8080": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-2026-09-02T01:38:04.368-07:00 ERROR 828 --- [UserMS] [RMI TCP Connection(225)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080 - de-registration failedCannot execute request on any known server
-
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.4.jar:2.0.4]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-2.0.4.jar:2.0.4]
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.4.jar:2.0.4]
-	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919) ~[eureka-client-2.0.4.jar:2.0.4]
-	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900) ~[eureka-client-2.0.4.jar:2.0.4]
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.1.jar:3.4.1]
+	at com.hms.user.UserMsApplication.main(UserMsApplication.java:10) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389) ~[spring-cloud-context-4.2.0.jar:4.2.0]
-	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136) ~[spring-cloud-context-4.2.0.jar:4.2.0]
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:668) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:625) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1368) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:584) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1361) ~[spring-beans-6.2.1.jar:6.2.1]
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219) ~[spring-context-6.2.1.jar:6.2.1]
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180) ~[spring-context-6.2.1.jar:6.2.1]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174) ~[spring-boot-3.4.1.jar:3.4.1]
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126) ~[spring-context-6.2.1.jar:6.2.1]
-	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-3.4.1.jar:3.4.1]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72) ~[na:na]
-	at jdk.internal.reflect.GeneratedMethodAccessor26.invoke(Unknown Source) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262) ~[na:na]
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[na:na]
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[na:na]
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117) ~[na:na]
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54) ~[na:na]
-	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237) ~[na:na]
-	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[na:na]
-	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[na:na]
-	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814) ~[na:na]
-	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712) ~[na:na]
-	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587) ~[na:na]
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828) ~[na:na]
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705) ~[na:na]
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[na:na]
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.1.jar:3.4.1]
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
-2026-09-02T01:38:04.392-07:00  INFO 828 --- [UserMS] [RMI TCP Connection(225)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2026-09-02T01:40:11.232-07:00  INFO 7852 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Starting UserMsApplication using Java 17.0.7 with PID 7852 (E:\STS-Projects\hms-backend\UserMS\target\classes started by KAUSAL in E:\STS-Projects\hms-backend\UserMS)
-2026-09-02T01:40:11.246-07:00 DEBUG 7852 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Running with Spring Boot v3.4.1, Spring v6.2.1
-2026-09-02T01:40:11.249-07:00  INFO 7852 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : No active profile set, falling back to 1 default profile: "default"
-2026-09-02T01:40:11.370-07:00  INFO 7852 --- [UserMS] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-09-02T01:40:11.371-07:00  INFO 7852 --- [UserMS] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-09-02T01:40:14.165-07:00  INFO 7852 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-02T01:40:14.448-07:00  INFO 7852 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 261 ms. Found 1 JPA repository interface.
-2026-09-02T01:40:15.416-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2707a0a2-92f9-350c-99c6-6cb794af7cc4
-2026-09-02T01:40:19.480-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-09-02T01:40:19.510-07:00  INFO 7852 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-09-02T01:40:19.510-07:00  INFO 7852 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2026-09-02T01:40:19.659-07:00  INFO 7852 --- [UserMS] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-09-02T01:40:19.660-07:00  INFO 7852 --- [UserMS] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8287 ms
-2026-09-02T01:40:20.436-07:00  INFO 7852 --- [UserMS] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-09-02T01:40:20.822-07:00  INFO 7852 --- [UserMS] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
-2026-09-02T01:40:20.911-07:00  INFO 7852 --- [UserMS] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-09-02T01:40:21.618-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-02T01:40:21.694-07:00  INFO 7852 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-09-02T01:40:22.108-07:00  INFO 7852 --- [UserMS] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a6e43ab
-2026-09-02T01:40:22.114-07:00  INFO 7852 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-09-02T01:40:22.252-07:00  WARN 7852 --- [UserMS] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-09-02T01:40:22.304-07:00  INFO 7852 --- [UserMS] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	... 40 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:142) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:961) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	... 53 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	... 56 common frames omitted
+
+2026-09-03T00:04:51.707-07:00  WARN 10596 --- [UserMS] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-03T00:04:51.747-07:00  INFO 10596 --- [UserMS] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
 	Database driver: undefined/unknown
-	Database version: 8.0.46
+	Database version: 8.0
 	Autocommit mode: undefined/unknown
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-09-02T01:40:24.108-07:00  INFO 7852 --- [UserMS] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-09-02T01:40:24.217-07:00  INFO 7852 --- [UserMS] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-09-02T01:40:25.274-07:00  INFO 7852 --- [UserMS] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
-2026-09-02T01:40:25.383-07:00  WARN 7852 --- [UserMS] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-09-02T01:40:27.108-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
-2026-09-02T01:40:28.463-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2026-09-02T01:40:28.757-07:00  INFO 7852 --- [UserMS] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2026-09-02T01:40:28.903-07:00  WARN 7852 --- [UserMS] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-09-02T01:40:29.299-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2026-09-02T01:40:29.366-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2026-09-02T01:40:29.376-07:00  INFO 7852 --- [UserMS] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T01:40:29.399-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2026-09-02T01:40:29.400-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2026-09-02T01:40:29.400-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2026-09-02T01:40:29.401-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2026-09-02T01:40:29.401-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2026-09-02T01:40:29.401-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2026-09-02T01:40:29.402-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2026-09-02T01:40:31.755-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2026-09-02T01:40:31.759-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2026-09-02T01:40:31.764-07:00  INFO 7852 --- [UserMS] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-09-02T01:40:31.769-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1788338431767 with initial instances count: 0
-2026-09-02T01:40:31.784-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERMS with eureka with status UP
-2026-09-02T01:40:31.785-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1788338431785, current=UP, previous=STARTING]
-2026-09-02T01:40:31.789-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080: registering service...
-2026-09-02T01:40:31.856-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2026-09-02T01:40:31.858-07:00  INFO 7852 --- [UserMS] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
-2026-09-02T01:40:32.244-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080 - registration status: 204
-2026-09-02T01:40:32.506-07:00  INFO 7852 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Started UserMsApplication in 23.582 seconds (process running for 26.17)
-2026-09-02T01:40:33.016-07:00  INFO 7852 --- [UserMS] [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-09-02T01:40:33.017-07:00  INFO 7852 --- [UserMS] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-09-02T01:40:33.023-07:00  INFO 7852 --- [UserMS] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2026-09-02T01:41:01.770-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2026-09-02T01:41:01.771-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2026-09-02T01:41:01.773-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2026-09-02T01:41:01.774-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2026-09-02T01:41:01.776-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2026-09-02T01:41:01.777-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2026-09-02T01:41:01.778-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2026-09-02T01:41:01.827-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2026-09-02T01:45:29.433-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T01:50:29.540-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T01:55:30.148-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T02:00:31.593-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T02:05:31.606-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T02:10:31.627-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T02:15:31.630-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T02:20:31.647-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T02:42:04.122-07:00  WARN 7852 --- [UserMS] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m10s801ms138µs).
-2026-09-02T02:43:12.045-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T02:48:12.117-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T02:53:12.226-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T02:58:12.239-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T03:03:12.254-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T03:08:12.295-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T03:13:12.364-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T03:18:13.195-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T03:23:13.422-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T03:28:14.271-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T03:33:14.657-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T03:38:15.169-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T03:43:15.291-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T03:48:15.596-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T03:53:15.720-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T03:58:15.821-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T04:03:15.969-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T04:08:16.001-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T04:13:16.083-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T04:18:16.472-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T04:23:16.495-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T04:28:16.539-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T04:33:16.557-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T04:38:16.599-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T04:41:39.819-07:00  WARN 7852 --- [UserMS] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m32s544ms453µs500ns).
-2026-09-02T04:46:19.240-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T04:51:19.345-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T04:52:45.510-07:00  INFO 7852 --- [UserMS] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 26 class path changes (0 additions, 26 deletions, 0 modifications)
-2026-09-02T04:52:46.223-07:00  INFO 7852 --- [UserMS] [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USERMS with eureka with status DOWN
-2026-09-02T04:52:46.234-07:00  INFO 7852 --- [UserMS] [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1788349966233, current=DOWN, previous=UP]
-2026-09-02T04:52:46.249-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080: registering service...
-2026-09-02T04:52:46.628-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080 - registration status: 204
-2026-09-02T04:52:47.743-07:00  INFO 7852 --- [UserMS] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-09-02T04:52:48.593-07:00  INFO 7852 --- [UserMS] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-09-02T04:52:54.247-07:00  INFO 7852 --- [UserMS] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-09-02T04:52:54.568-07:00  INFO 7852 --- [UserMS] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-09-02T04:52:54.751-07:00  INFO 7852 --- [UserMS] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-09-02T04:52:54.767-07:00  INFO 7852 --- [UserMS] [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2026-09-02T04:52:58.532-07:00  INFO 7852 --- [UserMS] [Thread-7] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2026-09-02T04:52:58.606-07:00  INFO 7852 --- [UserMS] [Thread-7] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080 - deregister  status: 200
-2026-09-02T04:52:58.612-07:00  INFO 7852 --- [UserMS] [Thread-7] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2026-09-02T04:53:04.290-07:00  INFO 11412 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Starting UserMsApplication using Java 17.0.7 with PID 11412 (E:\STS-Projects\hms-backend\UserMS\target\classes started by KAUSAL in E:\STS-Projects\hms-backend\UserMS)
-2026-09-02T04:53:04.301-07:00 DEBUG 11412 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Running with Spring Boot v3.4.1, Spring v6.2.1
-2026-09-02T04:53:04.317-07:00  INFO 11412 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : No active profile set, falling back to 1 default profile: "default"
-2026-09-02T04:53:05.901-07:00  INFO 11412 --- [UserMS] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-09-02T04:53:05.902-07:00  INFO 11412 --- [UserMS] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-09-02T04:53:18.569-07:00  INFO 7852 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Starting UserMsApplication using Java 17.0.7 with PID 7852 (E:\STS-Projects\hms-backend\UserMS\target\classes started by KAUSAL in E:\STS-Projects\hms-backend\UserMS)
-2026-09-02T04:53:18.573-07:00 DEBUG 7852 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Running with Spring Boot v3.4.1, Spring v6.2.1
-2026-09-02T04:53:18.574-07:00  INFO 7852 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : No active profile set, falling back to 1 default profile: "default"
-2026-09-02T04:53:30.017-07:00  INFO 11412 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-02T04:53:35.079-07:00  INFO 11412 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4930 ms. Found 1 JPA repository interface.
-2026-09-02T04:53:37.430-07:00  INFO 11412 --- [UserMS] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2707a0a2-92f9-350c-99c6-6cb794af7cc4
-2026-09-02T04:53:38.067-07:00  INFO 7852 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-02T04:53:39.128-07:00  INFO 7852 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 943 ms. Found 1 JPA repository interface.
-2026-09-02T04:53:45.864-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2707a0a2-92f9-350c-99c6-6cb794af7cc4
-2026-09-02T04:53:51.696-07:00  INFO 11412 --- [UserMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-09-02T04:53:51.749-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-09-02T04:53:51.784-07:00  INFO 11412 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-09-02T04:53:51.785-07:00  INFO 11412 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2026-09-02T04:53:51.826-07:00  INFO 7852 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-09-02T04:53:51.827-07:00  INFO 7852 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2026-09-02T04:53:53.160-07:00  INFO 7852 --- [UserMS] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-09-02T04:53:53.163-07:00  INFO 7852 --- [UserMS] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 34435 ms
-2026-09-02T04:53:53.211-07:00  INFO 11412 --- [UserMS] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-09-02T04:53:53.217-07:00  INFO 11412 --- [UserMS] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 47268 ms
-2026-09-02T04:54:00.405-07:00  INFO 7852 --- [UserMS] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-09-02T04:54:00.466-07:00  INFO 7852 --- [UserMS] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-09-02T04:54:02.411-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-02T04:54:02.622-07:00  INFO 7852 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2026-09-02T04:54:03.050-07:00  INFO 7852 --- [UserMS] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3406bb53
-2026-09-02T04:54:03.191-07:00  INFO 7852 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2026-09-02T04:54:03.190-07:00  INFO 11412 --- [UserMS] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-09-02T04:54:03.263-07:00  WARN 7852 --- [UserMS] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-09-02T04:54:03.276-07:00  INFO 7852 --- [UserMS] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
-	Database driver: undefined/unknown
-	Database version: 8.0.46
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-09-02T04:54:04.179-07:00  INFO 11412 --- [UserMS] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
-2026-09-02T04:54:04.651-07:00  INFO 11412 --- [UserMS] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-09-02T04:54:05.792-07:00  INFO 7852 --- [UserMS] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-09-02T04:54:08.371-07:00  WARN 7852 --- [UserMS] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1041, SQLState: HY000
-2026-09-02T04:54:08.375-07:00 ERROR 7852 --- [UserMS] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : Out of memory; check if mysqld or some other process uses all available memory; if not, you may have to use 'ulimit' to allow mysqld to use more memory or you can add more swap space
-2026-09-02T04:54:08.404-07:00 ERROR 7852 --- [UserMS] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Error accessing tables metadata [Out of memory; check if mysqld or some other process uses all available memory; if not, you may have to use 'ulimit' to allow mysqld to use more memory or you can add more swap space] [n/a]
-2026-09-02T04:54:08.410-07:00  WARN 7852 --- [UserMS] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Error accessing tables metadata [Out of memory; check if mysqld or some other process uses all available memory; if not, you may have to use 'ulimit' to allow mysqld to use more memory or you can add more swap space] [n/a]
-2026-09-02T04:54:08.412-07:00  INFO 7852 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2026-09-02T04:54:08.428-07:00  INFO 7852 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2026-09-02T04:54:08.439-07:00  INFO 7852 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2026-09-02T04:54:08.566-07:00  INFO 7852 --- [UserMS] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-09-03T00:04:53.552-07:00  INFO 10596 --- [UserMS] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-03T00:04:53.609-07:00  INFO 10596 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-03T00:04:54.618-07:00  WARN 10596 --- [UserMS] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08S01
+2026-09-03T00:04:54.619-07:00 ERROR 10596 --- [UserMS] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2026-09-03T00:04:54.631-07:00 ERROR 10596 --- [UserMS] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+2026-09-03T00:04:54.632-07:00  WARN 10596 --- [UserMS] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+2026-09-03T00:04:54.637-07:00  INFO 10596 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-09-03T00:04:54.796-07:00  INFO 10596 --- [UserMS] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2026-09-02T04:54:08.742-07:00 ERROR 7852 --- [UserMS] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+2026-09-03T00:04:54.847-07:00 ERROR 10596 --- [UserMS] [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Error accessing tables metadata [Out of memory; check if mysqld or some other process uses all available memory; if not, you may have to use 'ulimit' to allow mysqld to use more memory or you can add more swap space] [n/a]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.1.jar:6.2.1]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.1.jar:6.2.1]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.1.jar:6.2.1]
@@ -650,21 +169,27 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.1.jar:3.4.1]
-Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Error accessing tables metadata [Out of memory; check if mysqld or some other process uses all available memory; if not, you may have to use 'ulimit' to allow mysqld to use more memory or you can add more swap space] [n/a]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431) ~[spring-orm-6.2.1.jar:6.2.1]
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.1.jar:6.2.1]
 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.1.jar:6.2.1]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-6.2.1.jar:6.2.1]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-6.2.1.jar:6.2.1]
 	... 20 common frames omitted
-Caused by: org.hibernate.exception.GenericJDBCException: Error accessing tables metadata [Out of memory; check if mysqld or some other process uses all available memory; if not, you may have to use 'ulimit' to allow mysqld to use more memory or you can add more swap space] [n/a]
-	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.convertSQLException(AbstractInformationExtractorImpl.java:124) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.populateTablesWithColumns(AbstractInformationExtractorImpl.java:671) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.lambda$getTables$3(AbstractInformationExtractorImpl.java:577) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:70) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
 	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
 	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
 	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
@@ -683,159 +208,380 @@ Caused by: org.hibernate.exception.GenericJDBCException: Error accessing tables 
 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.1.jar:6.2.1]
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.1.jar:6.2.1]
 	... 24 common frames omitted
-Caused by: java.sql.SQLException: Out of memory; check if mysqld or some other process uses all available memory; if not, you may have to use 'ulimit' to allow mysqld to use more memory or you can add more swap space
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-9.1.0.jar:9.1.0]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.1.0.jar:9.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988) ~[mysql-connector-j-9.1.0.jar:9.1.0]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1056) ~[mysql-connector-j-9.1.0.jar:9.1.0]
-	at com.mysql.cj.jdbc.DatabaseMetaDataUsingInfoSchema.executeMetadataQuery(DatabaseMetaDataUsingInfoSchema.java:66) ~[mysql-connector-j-9.1.0.jar:9.1.0]
-	at com.mysql.cj.jdbc.DatabaseMetaDataUsingInfoSchema.getColumns(DatabaseMetaDataUsingInfoSchema.java:273) ~[mysql-connector-j-9.1.0.jar:9.1.0]
-	at com.zaxxer.hikari.pool.ProxyDatabaseMetaData.getColumns(ProxyDatabaseMetaData.java:107) ~[HikariCP-5.1.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyDatabaseMetaData.getColumns(HikariProxyDatabaseMetaData.java) ~[HikariCP-5.1.0.jar:na]
-	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processColumnsResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:81) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.populateTablesWithColumns(AbstractInformationExtractorImpl.java:649) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
-	... 43 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
-2026-09-02T04:54:12.767-07:00  INFO 7852 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Starting UserMsApplication using Java 17.0.7 with PID 7852 (E:\STS-Projects\hms-backend\UserMS\target\classes started by KAUSAL in E:\STS-Projects\hms-backend\UserMS)
-2026-09-02T04:54:12.769-07:00 DEBUG 7852 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Running with Spring Boot v3.4.1, Spring v6.2.1
-2026-09-02T04:54:12.770-07:00  INFO 7852 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : No active profile set, falling back to 1 default profile: "default"
-2026-09-02T04:54:17.697-07:00  INFO 7852 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-02T04:54:17.766-07:00  INFO 7852 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
-2026-09-02T04:54:18.545-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2707a0a2-92f9-350c-99c6-6cb794af7cc4
-2026-09-02T04:54:20.629-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-09-02T04:54:20.640-07:00  INFO 7852 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-09-02T04:54:20.641-07:00  INFO 7852 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2026-09-02T04:54:20.864-07:00  INFO 7852 --- [UserMS] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2026-09-02T04:54:20.865-07:00  INFO 7852 --- [UserMS] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7959 ms
-2026-09-02T04:54:23.914-07:00  INFO 7852 --- [UserMS] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-09-02T04:54:24.354-07:00  INFO 7852 --- [UserMS] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-09-02T04:54:24.561-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-02T04:54:24.579-07:00  INFO 7852 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2026-09-02T04:54:25.119-07:00  INFO 7852 --- [UserMS] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ee82d6d
-2026-09-02T04:54:25.120-07:00  INFO 7852 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2026-09-02T04:54:25.138-07:00  WARN 7852 --- [UserMS] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-09-02T04:54:25.143-07:00  INFO 7852 --- [UserMS] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.6.4.Final.jar:6.6.4.Final]
+	... 45 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:142) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:961) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	... 58 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	... 61 common frames omitted
+
+2026-09-03T00:06:13.639-07:00  INFO 1824 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Starting UserMsApplication using Java 17.0.7 with PID 1824 (E:\STS-Projects\hms-backend\UserMS\target\classes started by KAUSAL in E:\STS-Projects\hms-backend\UserMS)
+2026-09-03T00:06:13.668-07:00 DEBUG 1824 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-09-03T00:06:13.670-07:00  INFO 1824 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-09-03T00:06:13.795-07:00  INFO 1824 --- [UserMS] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-03T00:06:13.796-07:00  INFO 1824 --- [UserMS] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-03T00:06:16.689-07:00  INFO 1824 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-03T00:06:17.075-07:00  INFO 1824 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 366 ms. Found 1 JPA repository interface.
+2026-09-03T00:06:17.761-07:00  INFO 1824 --- [UserMS] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2707a0a2-92f9-350c-99c6-6cb794af7cc4
+2026-09-03T00:06:19.543-07:00  INFO 1824 --- [UserMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-09-03T00:06:19.571-07:00  INFO 1824 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-03T00:06:19.572-07:00  INFO 1824 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-09-03T00:06:19.736-07:00  INFO 1824 --- [UserMS] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-03T00:06:19.737-07:00  INFO 1824 --- [UserMS] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5939 ms
+2026-09-03T00:06:20.468-07:00  INFO 1824 --- [UserMS] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-03T00:06:20.624-07:00  INFO 1824 --- [UserMS] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-09-03T00:06:20.712-07:00  INFO 1824 --- [UserMS] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-03T00:06:22.066-07:00  INFO 1824 --- [UserMS] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-03T00:06:22.204-07:00  INFO 1824 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-03T00:06:22.817-07:00  INFO 1824 --- [UserMS] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ab45e05
+2026-09-03T00:06:22.830-07:00  INFO 1824 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-03T00:06:22.989-07:00  WARN 1824 --- [UserMS] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-03T00:06:23.056-07:00  INFO 1824 --- [UserMS] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.46
 	Autocommit mode: undefined/unknown
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-09-02T04:54:26.156-07:00  INFO 7852 --- [UserMS] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-09-02T04:54:26.252-07:00  INFO 7852 --- [UserMS] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-09-02T04:54:27.106-07:00  INFO 7852 --- [UserMS] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
-2026-09-02T04:54:27.305-07:00  WARN 7852 --- [UserMS] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-09-02T04:54:36.504-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
-2026-09-02T04:54:38.711-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2026-09-02T04:54:39.366-07:00  INFO 7852 --- [UserMS] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2026-09-02T04:54:39.590-07:00  WARN 7852 --- [UserMS] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-09-02T04:54:39.820-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2026-09-02T04:54:39.859-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2026-09-02T04:54:39.863-07:00  INFO 7852 --- [UserMS] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T04:54:39.868-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2026-09-02T04:54:39.869-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2026-09-02T04:54:39.869-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2026-09-02T04:54:39.870-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2026-09-02T04:54:39.870-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2026-09-02T04:54:39.870-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2026-09-02T04:54:39.873-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2026-09-02T04:54:41.210-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2026-09-02T04:54:41.213-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2026-09-02T04:54:41.214-07:00  INFO 7852 --- [UserMS] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-09-02T04:54:41.215-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1788350081215 with initial instances count: 1
-2026-09-02T04:54:41.242-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERMS with eureka with status UP
-2026-09-02T04:54:41.321-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1788350081321, current=UP, previous=STARTING]
-2026-09-02T04:54:41.326-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6.lan:UserMS:8080: registering service...
-2026-09-02T04:54:41.579-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2026-09-02T04:54:41.584-07:00  INFO 7852 --- [UserMS] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
-2026-09-02T04:54:41.737-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6.lan:UserMS:8080 - registration status: 204
-2026-09-02T04:54:42.847-07:00  INFO 7852 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Started UserMsApplication in 31.715 seconds (process running for 11676.571)
-2026-09-02T04:54:42.891-07:00  INFO 7852 --- [UserMS] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2026-09-02T04:58:57.002-07:00  INFO 7852 --- [UserMS] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 26 class path changes (0 additions, 26 deletions, 0 modifications)
-2026-09-02T04:59:01.223-07:00  INFO 7852 --- [UserMS] [Thread-14] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USERMS with eureka with status DOWN
-2026-09-02T04:59:01.228-07:00  INFO 7852 --- [UserMS] [Thread-14] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1788350341228, current=DOWN, previous=UP]
-2026-09-02T04:59:01.245-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6.lan:UserMS:8080: registering service...
-2026-09-02T04:59:01.403-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6.lan:UserMS:8080 - registration status: 204
-2026-09-02T04:59:01.725-07:00  INFO 7852 --- [UserMS] [Thread-14] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-09-02T04:59:02.087-07:00  INFO 7852 --- [UserMS] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-09-02T04:59:05.165-07:00  INFO 7852 --- [UserMS] [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-09-02T04:59:05.461-07:00  INFO 7852 --- [UserMS] [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
-2026-09-02T04:59:05.645-07:00  INFO 7852 --- [UserMS] [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
-2026-09-02T04:59:05.703-07:00  INFO 7852 --- [UserMS] [Thread-14] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2026-09-02T04:59:09.121-07:00  INFO 7852 --- [UserMS] [Thread-14] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2026-09-02T04:59:09.152-07:00  INFO 7852 --- [UserMS] [Thread-14] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6.lan:UserMS:8080 - deregister  status: 200
-2026-09-02T04:59:09.154-07:00  INFO 7852 --- [UserMS] [Thread-14] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2026-09-02T04:59:27.550-07:00  INFO 7852 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Starting UserMsApplication using Java 17.0.7 with PID 7852 (E:\STS-Projects\hms-backend\UserMS\target\classes started by KAUSAL in E:\STS-Projects\hms-backend\UserMS)
-2026-09-02T04:59:27.551-07:00 DEBUG 7852 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Running with Spring Boot v3.4.1, Spring v6.2.1
-2026-09-02T04:59:27.553-07:00  INFO 7852 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : No active profile set, falling back to 1 default profile: "default"
-2026-09-02T04:59:36.316-07:00  INFO 7852 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-02T04:59:37.329-07:00  INFO 7852 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 975 ms. Found 1 JPA repository interface.
-2026-09-02T04:59:44.444-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2707a0a2-92f9-350c-99c6-6cb794af7cc4
-2026-09-02T04:59:50.879-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-09-02T04:59:50.917-07:00  INFO 7852 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-09-02T04:59:50.918-07:00  INFO 7852 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2026-09-02T04:59:55.055-07:00  INFO 7852 --- [UserMS] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2026-09-02T04:59:55.060-07:00  INFO 7852 --- [UserMS] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 27496 ms
-2026-09-02T04:59:57.189-07:00  INFO 7852 --- [UserMS] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-09-02T04:59:57.226-07:00  INFO 7852 --- [UserMS] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-09-02T04:59:57.360-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-02T04:59:57.371-07:00  INFO 7852 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
-2026-09-02T04:59:57.504-07:00  INFO 7852 --- [UserMS] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@68d9fa4c
-2026-09-02T04:59:57.507-07:00  INFO 7852 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
-2026-09-02T04:59:57.533-07:00  WARN 7852 --- [UserMS] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-09-02T04:59:57.539-07:00  INFO 7852 --- [UserMS] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+2026-09-03T00:06:24.916-07:00  INFO 1824 --- [UserMS] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-03T00:06:25.037-07:00  INFO 1824 --- [UserMS] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-03T00:06:26.070-07:00  INFO 1824 --- [UserMS] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2026-09-03T00:06:26.246-07:00  WARN 1824 --- [UserMS] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-03T00:06:28.066-07:00  INFO 1824 --- [UserMS] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
+2026-09-03T00:06:29.451-07:00  INFO 1824 --- [UserMS] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-09-03T00:06:29.745-07:00  INFO 1824 --- [UserMS] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-09-03T00:06:29.901-07:00  WARN 1824 --- [UserMS] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-03T00:06:30.335-07:00  INFO 1824 --- [UserMS] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-09-03T00:06:30.408-07:00  INFO 1824 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-09-03T00:06:30.424-07:00  INFO 1824 --- [UserMS] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T00:06:30.451-07:00  INFO 1824 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-09-03T00:06:30.452-07:00  INFO 1824 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-09-03T00:06:30.452-07:00  INFO 1824 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-09-03T00:06:30.452-07:00  INFO 1824 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-09-03T00:06:30.454-07:00  INFO 1824 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-09-03T00:06:30.454-07:00  INFO 1824 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-09-03T00:06:30.455-07:00  INFO 1824 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-09-03T00:06:31.497-07:00  INFO 1824 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-09-03T00:06:31.500-07:00  INFO 1824 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-09-03T00:06:31.505-07:00  INFO 1824 --- [UserMS] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-09-03T00:06:31.509-07:00  INFO 1824 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1788419191508 with initial instances count: 0
+2026-09-03T00:06:31.522-07:00  INFO 1824 --- [UserMS] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERMS with eureka with status UP
+2026-09-03T00:06:31.524-07:00  INFO 1824 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1788419191524, current=UP, previous=STARTING]
+2026-09-03T00:06:31.528-07:00  INFO 1824 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6.lan:UserMS:8080: registering service...
+2026-09-03T00:06:31.637-07:00  INFO 1824 --- [UserMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-09-03T00:06:31.640-07:00  INFO 1824 --- [UserMS] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2026-09-03T00:06:31.647-07:00  INFO 1824 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6.lan:UserMS:8080 - registration status: 204
+2026-09-03T00:06:32.209-07:00  INFO 1824 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Started UserMsApplication in 19.994 seconds (process running for 23.254)
+2026-09-03T00:06:32.764-07:00  INFO 1824 --- [UserMS] [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-03T00:06:32.765-07:00  INFO 1824 --- [UserMS] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-03T00:06:32.769-07:00  INFO 1824 --- [UserMS] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-09-03T00:07:01.517-07:00  INFO 1824 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-09-03T00:07:01.518-07:00  INFO 1824 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-09-03T00:07:01.519-07:00  INFO 1824 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-09-03T00:07:01.521-07:00  INFO 1824 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-09-03T00:07:01.522-07:00  INFO 1824 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-09-03T00:07:01.523-07:00  INFO 1824 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-09-03T00:07:01.527-07:00  INFO 1824 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-09-03T00:07:01.574-07:00  INFO 1824 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-09-03T00:11:30.677-07:00  INFO 1824 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T00:16:30.870-07:00  INFO 1824 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T00:21:31.318-07:00  INFO 1824 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T00:26:31.978-07:00  INFO 1824 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T00:31:32.314-07:00  INFO 1824 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T00:36:32.762-07:00  INFO 1824 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T00:41:33.613-07:00  INFO 1824 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T00:46:33.733-07:00  INFO 1824 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T00:51:33.810-07:00  INFO 1824 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T00:56:33.884-07:00  INFO 1824 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T01:19:26.129-07:00  INFO 11816 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Starting UserMsApplication using Java 17.0.7 with PID 11816 (E:\STS-Projects\hms-backend\UserMS\target\classes started by KAUSAL in E:\STS-Projects\hms-backend\UserMS)
+2026-09-03T01:19:26.198-07:00 DEBUG 11816 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-09-03T01:19:26.200-07:00  INFO 11816 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-09-03T01:19:26.344-07:00  INFO 11816 --- [UserMS] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-03T01:19:26.346-07:00  INFO 11816 --- [UserMS] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-03T01:19:30.209-07:00  INFO 11816 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-03T01:19:31.094-07:00  INFO 11816 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 811 ms. Found 1 JPA repository interface.
+2026-09-03T01:19:33.899-07:00  INFO 11816 --- [UserMS] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2707a0a2-92f9-350c-99c6-6cb794af7cc4
+2026-09-03T01:19:42.705-07:00  INFO 11816 --- [UserMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-09-03T01:19:43.313-07:00  INFO 11816 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-03T01:19:43.314-07:00  INFO 11816 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-09-03T01:19:43.982-07:00  INFO 11816 --- [UserMS] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-03T01:19:43.983-07:00  INFO 11816 --- [UserMS] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 17635 ms
+2026-09-03T01:19:51.428-07:00  INFO 11816 --- [UserMS] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-03T01:19:52.365-07:00  INFO 11816 --- [UserMS] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-09-03T01:19:52.966-07:00  INFO 11816 --- [UserMS] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-03T01:19:58.332-07:00  INFO 11816 --- [UserMS] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-03T01:19:58.678-07:00  INFO 11816 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-03T01:20:03.813-07:00  INFO 11816 --- [UserMS] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20e302c7
+2026-09-03T01:20:03.832-07:00  INFO 11816 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-03T01:20:05.678-07:00  WARN 11816 --- [UserMS] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-03T01:20:06.089-07:00  INFO 11816 --- [UserMS] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.46
 	Autocommit mode: undefined/unknown
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-09-02T04:59:58.173-07:00  INFO 7852 --- [UserMS] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-09-02T04:59:58.236-07:00  INFO 7852 --- [UserMS] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-09-02T04:59:58.924-07:00  INFO 7852 --- [UserMS] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
-2026-09-02T04:59:59.054-07:00  WARN 7852 --- [UserMS] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-09-02T05:00:00.981-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
-2026-09-02T05:00:02.964-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2026-09-02T05:00:03.498-07:00  INFO 7852 --- [UserMS] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2026-09-02T05:00:03.653-07:00  WARN 7852 --- [UserMS] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-09-02T05:00:03.798-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2026-09-02T05:00:03.824-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2026-09-02T05:00:03.829-07:00  INFO 7852 --- [UserMS] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T05:00:03.834-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2026-09-02T05:00:03.834-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2026-09-02T05:00:03.835-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2026-09-02T05:00:03.835-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2026-09-02T05:00:03.835-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2026-09-02T05:00:03.835-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2026-09-02T05:00:03.836-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2026-09-02T05:00:04.057-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2026-09-02T05:00:04.059-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2026-09-02T05:00:04.061-07:00  INFO 7852 --- [UserMS] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-09-02T05:00:04.062-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1788350404061 with initial instances count: 0
-2026-09-02T05:00:04.073-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERMS with eureka with status UP
-2026-09-02T05:00:04.073-07:00  INFO 7852 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1788350404073, current=UP, previous=STARTING]
-2026-09-02T05:00:04.074-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6.lan:UserMS:8080: registering service...
-2026-09-02T05:00:04.097-07:00  INFO 7852 --- [UserMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2026-09-02T05:00:04.099-07:00  INFO 7852 --- [UserMS] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
-2026-09-02T05:00:04.120-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6.lan:UserMS:8080 - registration status: 204
-2026-09-02T05:00:04.784-07:00  INFO 7852 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Started UserMsApplication in 42.061 seconds (process running for 11998.507)
-2026-09-02T05:00:04.804-07:00  INFO 7852 --- [UserMS] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2026-09-02T05:00:34.190-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2026-09-02T05:00:34.199-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2026-09-02T05:00:34.200-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2026-09-02T05:00:34.222-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2026-09-02T05:00:34.224-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2026-09-02T05:00:34.225-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2026-09-02T05:00:34.225-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2026-09-02T05:00:34.273-07:00  INFO 7852 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2026-09-02T05:05:03.915-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T05:10:04.105-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T05:15:04.181-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T05:20:04.202-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T05:25:05.794-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T05:30:05.808-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T06:18:57.275-07:00  WARN 7852 --- [UserMS] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=45m28s906ms483µs900ns).
-2026-09-02T06:20:05.201-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-09-02T06:25:05.385-07:00  INFO 7852 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T01:20:41.586-07:00  INFO 11816 --- [UserMS] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-03T01:20:41.981-07:00  INFO 11816 --- [UserMS] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-03T01:20:49.873-07:00  INFO 11816 --- [UserMS] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2026-09-03T01:20:50.657-07:00  WARN 11816 --- [UserMS] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-03T01:20:58.999-07:00  INFO 11816 --- [UserMS] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
+2026-09-03T01:21:02.565-07:00  INFO 11816 --- [UserMS] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-09-03T01:21:03.474-07:00  INFO 11816 --- [UserMS] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-09-03T01:21:03.991-07:00  WARN 11816 --- [UserMS] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-03T01:21:04.834-07:00  INFO 11816 --- [UserMS] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-09-03T01:21:04.948-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-09-03T01:21:04.964-07:00  INFO 11816 --- [UserMS] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T01:21:04.997-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-09-03T01:21:04.997-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-09-03T01:21:05.003-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-09-03T01:21:05.003-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-09-03T01:21:05.003-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-09-03T01:21:05.003-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-09-03T01:21:05.004-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-09-03T01:21:12.802-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-09-03T01:21:12.812-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-09-03T01:21:12.836-07:00  INFO 11816 --- [UserMS] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-09-03T01:21:12.847-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1788423672845 with initial instances count: 0
+2026-09-03T01:21:12.872-07:00  INFO 11816 --- [UserMS] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERMS with eureka with status UP
+2026-09-03T01:21:12.911-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1788423672911, current=UP, previous=STARTING]
+2026-09-03T01:21:12.917-07:00  INFO 11816 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080: registering service...
+2026-09-03T01:21:13.090-07:00  INFO 11816 --- [UserMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-09-03T01:21:13.128-07:00  INFO 11816 --- [UserMS] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2026-09-03T01:21:17.842-07:00  INFO 11816 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Started UserMsApplication in 112.802 seconds (process running for 114.831)
+2026-09-03T01:21:20.317-07:00  INFO 11816 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080 - registration status: 204
+2026-09-03T01:21:42.827-07:00  INFO 11816 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-09-03T01:21:42.829-07:00  INFO 11816 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-09-03T01:21:42.830-07:00  INFO 11816 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-09-03T01:21:42.831-07:00  INFO 11816 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-09-03T01:21:42.831-07:00  INFO 11816 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-09-03T01:21:42.831-07:00  INFO 11816 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-09-03T01:21:42.832-07:00  INFO 11816 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-09-03T01:21:43.099-07:00  INFO 11816 --- [UserMS] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-09-03T01:22:02.829-07:00  INFO 11816 --- [UserMS] [RMI TCP Connection(11)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-03T01:22:02.831-07:00  INFO 11816 --- [UserMS] [RMI TCP Connection(11)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-03T01:22:02.853-07:00  INFO 11816 --- [UserMS] [RMI TCP Connection(11)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2026-09-03T01:26:05.438-07:00  INFO 11816 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T01:31:05.949-07:00  INFO 11816 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T01:36:06.071-07:00  INFO 11816 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T01:41:06.165-07:00  INFO 11816 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T01:43:34.775-07:00  INFO 11816 --- [UserMS] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2026-09-03T01:43:35.321-07:00  INFO 11816 --- [UserMS] [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USERMS with eureka with status DOWN
+2026-09-03T01:43:35.328-07:00  INFO 11816 --- [UserMS] [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1788425015328, current=DOWN, previous=UP]
+2026-09-03T01:43:35.339-07:00  INFO 11816 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080: registering service...
+2026-09-03T01:43:36.014-07:00  INFO 11816 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080 - registration status: 204
+2026-09-03T01:43:37.338-07:00  INFO 11816 --- [UserMS] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-03T01:43:38.026-07:00  INFO 11816 --- [UserMS] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-09-03T01:43:45.384-07:00  INFO 11816 --- [UserMS] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-03T01:43:45.686-07:00  INFO 11816 --- [UserMS] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-03T01:43:46.182-07:00  INFO 11816 --- [UserMS] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-03T01:43:46.202-07:00  INFO 11816 --- [UserMS] [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-09-03T01:43:49.328-07:00  INFO 11816 --- [UserMS] [Thread-7] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-09-03T01:43:49.878-07:00  INFO 11816 --- [UserMS] [Thread-7] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080 - deregister  status: 200
+2026-09-03T01:43:49.884-07:00  INFO 11816 --- [UserMS] [Thread-7] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-09-03T01:43:58.200-07:00  INFO 11816 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Starting UserMsApplication using Java 17.0.7 with PID 11816 (E:\STS-Projects\hms-backend\UserMS\target\classes started by KAUSAL in E:\STS-Projects\hms-backend\UserMS)
+2026-09-03T01:43:58.200-07:00 DEBUG 11816 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-09-03T01:43:58.201-07:00  INFO 11816 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-09-03T01:44:01.926-07:00  INFO 11816 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-03T01:44:02.000-07:00  INFO 11816 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interface.
+2026-09-03T01:44:02.740-07:00  INFO 11816 --- [UserMS] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2707a0a2-92f9-350c-99c6-6cb794af7cc4
+2026-09-03T01:44:03.659-07:00  INFO 2556 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Starting UserMsApplication using Java 17.0.7 with PID 2556 (E:\STS-Projects\hms-backend\UserMS\target\classes started by KAUSAL in E:\STS-Projects\hms-backend\UserMS)
+2026-09-03T01:44:03.665-07:00 DEBUG 2556 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-09-03T01:44:03.667-07:00  INFO 2556 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-09-03T01:44:03.847-07:00  INFO 2556 --- [UserMS] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-03T01:44:03.848-07:00  INFO 2556 --- [UserMS] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-03T01:44:04.044-07:00  INFO 11816 --- [UserMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-09-03T01:44:04.048-07:00  INFO 11816 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-03T01:44:04.049-07:00  INFO 11816 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-09-03T01:44:04.269-07:00  INFO 11816 --- [UserMS] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-03T01:44:04.269-07:00  INFO 11816 --- [UserMS] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6056 ms
+2026-09-03T01:44:05.248-07:00  INFO 11816 --- [UserMS] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-03T01:44:05.303-07:00  INFO 11816 --- [UserMS] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-03T01:44:05.407-07:00  INFO 11816 --- [UserMS] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-03T01:44:05.413-07:00  INFO 11816 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-09-03T01:44:05.442-07:00  INFO 11816 --- [UserMS] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@257e76d3
+2026-09-03T01:44:05.443-07:00  INFO 11816 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-09-03T01:44:05.450-07:00  WARN 11816 --- [UserMS] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-03T01:44:05.452-07:00  INFO 11816 --- [UserMS] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.46
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-03T01:44:06.387-07:00  INFO 11816 --- [UserMS] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-03T01:44:06.473-07:00  INFO 11816 --- [UserMS] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-03T01:44:07.085-07:00  INFO 11816 --- [UserMS] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2026-09-03T01:44:07.249-07:00  WARN 11816 --- [UserMS] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-03T01:44:10.136-07:00  INFO 2556 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-03T01:44:11.039-07:00  INFO 11816 --- [UserMS] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
+2026-09-03T01:44:11.158-07:00  INFO 2556 --- [UserMS] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 961 ms. Found 1 JPA repository interface.
+2026-09-03T01:44:12.740-07:00  INFO 2556 --- [UserMS] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2707a0a2-92f9-350c-99c6-6cb794af7cc4
+2026-09-03T01:44:12.931-07:00  INFO 11816 --- [UserMS] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-09-03T01:44:13.683-07:00  INFO 11816 --- [UserMS] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-09-03T01:44:14.209-07:00  WARN 11816 --- [UserMS] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-03T01:44:14.430-07:00  INFO 11816 --- [UserMS] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-09-03T01:44:14.440-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-09-03T01:44:14.441-07:00  INFO 11816 --- [UserMS] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T01:44:14.442-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-09-03T01:44:14.442-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-09-03T01:44:14.446-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-09-03T01:44:14.451-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-09-03T01:44:14.451-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-09-03T01:44:14.455-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-09-03T01:44:14.456-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-09-03T01:44:14.638-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-09-03T01:44:14.640-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-09-03T01:44:14.641-07:00  INFO 11816 --- [UserMS] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-09-03T01:44:14.642-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1788425054642 with initial instances count: 2
+2026-09-03T01:44:14.659-07:00  INFO 11816 --- [UserMS] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERMS with eureka with status UP
+2026-09-03T01:44:14.660-07:00  INFO 11816 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1788425054660, current=UP, previous=STARTING]
+2026-09-03T01:44:14.674-07:00  INFO 11816 --- [UserMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-09-03T01:44:14.687-07:00  INFO 11816 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080: registering service...
+2026-09-03T01:44:14.679-07:00  INFO 11816 --- [UserMS] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2026-09-03T01:44:14.788-07:00  INFO 11816 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080 - registration status: 204
+2026-09-03T01:44:16.265-07:00  INFO 11816 --- [UserMS] [restartedMain] com.hms.user.UserMsApplication           : Started UserMsApplication in 19.66 seconds (process running for 1493.255)
+2026-09-03T01:44:16.293-07:00  INFO 11816 --- [UserMS] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-09-03T01:44:16.646-07:00  INFO 2556 --- [UserMS] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-09-03T01:44:16.687-07:00  INFO 2556 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-03T01:44:16.688-07:00  INFO 2556 --- [UserMS] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-09-03T01:44:17.059-07:00  INFO 2556 --- [UserMS] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-03T01:44:17.068-07:00  INFO 2556 --- [UserMS] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 13216 ms
+2026-09-03T01:44:18.258-07:00  INFO 2556 --- [UserMS] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-03T01:44:18.586-07:00  INFO 2556 --- [UserMS] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-09-03T01:44:18.729-07:00  INFO 2556 --- [UserMS] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-03T01:44:20.207-07:00  INFO 2556 --- [UserMS] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-03T01:44:20.384-07:00  INFO 2556 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-03T01:44:21.018-07:00  INFO 2556 --- [UserMS] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50cf9bc1
+2026-09-03T01:44:21.025-07:00  INFO 2556 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-03T01:44:21.206-07:00  WARN 2556 --- [UserMS] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-03T01:44:21.305-07:00  INFO 2556 --- [UserMS] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.46
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-03T01:44:25.964-07:00  INFO 2556 --- [UserMS] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-03T01:44:26.102-07:00  INFO 2556 --- [UserMS] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-03T01:44:27.633-07:00  INFO 2556 --- [UserMS] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2026-09-03T01:44:27.811-07:00  WARN 2556 --- [UserMS] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-03T01:44:31.079-07:00  INFO 2556 --- [UserMS] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
+2026-09-03T01:44:33.954-07:00  WARN 2556 --- [UserMS] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2026-09-03T01:44:34.442-07:00  INFO 2556 --- [UserMS] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-09-03T01:44:34.655-07:00  WARN 2556 --- [UserMS] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-03T01:44:35.167-07:00  INFO 2556 --- [UserMS] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-09-03T01:44:35.256-07:00  INFO 2556 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-09-03T01:44:35.272-07:00  INFO 2556 --- [UserMS] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T01:44:35.303-07:00  INFO 2556 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-09-03T01:44:35.304-07:00  INFO 2556 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-09-03T01:44:35.305-07:00  INFO 2556 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-09-03T01:44:35.305-07:00  INFO 2556 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-09-03T01:44:35.305-07:00  INFO 2556 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-09-03T01:44:35.305-07:00  INFO 2556 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-09-03T01:44:35.306-07:00  INFO 2556 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-09-03T01:44:37.149-07:00  INFO 2556 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-09-03T01:44:37.158-07:00  INFO 2556 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-09-03T01:44:37.165-07:00  INFO 2556 --- [UserMS] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-09-03T01:44:37.176-07:00  INFO 2556 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1788425077172 with initial instances count: 3
+2026-09-03T01:44:37.209-07:00  INFO 2556 --- [UserMS] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERMS with eureka with status UP
+2026-09-03T01:44:37.211-07:00  INFO 2556 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1788425077211, current=UP, previous=STARTING]
+2026-09-03T01:44:37.219-07:00  INFO 2556 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080: registering service...
+2026-09-03T01:44:37.379-07:00  INFO 2556 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080 - registration status: 204
+2026-09-03T01:44:37.429-07:00  INFO 2556 --- [UserMS] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USERMS with eureka with status DOWN
+2026-09-03T01:44:37.431-07:00  INFO 2556 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1788425077431, current=DOWN, previous=UP]
+2026-09-03T01:44:37.432-07:00  WARN 2556 --- [UserMS] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-09-03T01:44:37.432-07:00  INFO 2556 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080: registering service...
+2026-09-03T01:44:37.445-07:00  INFO 2556 --- [UserMS] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080 - registration status: 204
+2026-09-03T01:44:37.482-07:00  INFO 2556 --- [UserMS] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-03T01:44:37.507-07:00  INFO 2556 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-03T01:44:37.557-07:00  INFO 2556 --- [UserMS] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-03T01:44:37.559-07:00  INFO 2556 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-09-03T01:44:40.562-07:00  INFO 2556 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-09-03T01:44:40.701-07:00  INFO 2556 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080 - deregister  status: 200
+2026-09-03T01:44:40.702-07:00  INFO 2556 --- [UserMS] [restartedMain] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-09-03T01:44:41.273-07:00  INFO 2556 --- [UserMS] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-09-03T01:44:41.401-07:00 ERROR 2556 --- [UserMS] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-09-03T01:44:45.689-07:00  INFO 11816 --- [UserMS] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080 - Re-registering apps/USERMS
+2026-09-03T01:44:45.690-07:00  INFO 11816 --- [UserMS] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080: registering service...
+2026-09-03T01:44:45.699-07:00  INFO 11816 --- [UserMS] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERMS/DESKTOP-97B0AF6:UserMS:8080 - registration status: 204
+2026-09-03T01:49:14.477-07:00  INFO 11816 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T01:52:22.050-07:00  INFO 11816 --- [UserMS] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-03T01:52:22.123-07:00  INFO 11816 --- [UserMS] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-03T01:52:22.193-07:00  INFO 11816 --- [UserMS] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 70 ms
+2026-09-03T01:54:14.545-07:00  INFO 11816 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T01:59:14.645-07:00  INFO 11816 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T02:04:15.085-07:00  INFO 11816 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T02:07:55.567-07:00  WARN 11816 --- [UserMS] [http-nio-8080-exec-3] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [640] milliseconds.
+2026-09-03T02:09:15.202-07:00  INFO 11816 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T02:14:15.258-07:00  INFO 11816 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T02:19:15.408-07:00  INFO 11816 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T02:24:15.460-07:00  INFO 11816 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T02:29:15.562-07:00  INFO 11816 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T02:34:15.665-07:00  INFO 11816 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T02:39:15.778-07:00  INFO 11816 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T02:44:15.908-07:00  INFO 11816 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T02:49:15.977-07:00  INFO 11816 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T02:54:16.174-07:00  INFO 11816 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-03T03:00:29.245-07:00  WARN 11816 --- [UserMS] [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=2m46s350ms884µs400ns).
+2026-09-03T03:01:46.158-07:00  INFO 11816 --- [UserMS] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

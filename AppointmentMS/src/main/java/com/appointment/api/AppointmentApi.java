@@ -1,5 +1,7 @@
 package com.appointment.api;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +19,6 @@ import com.appointment.dto.AppointmentDto;
 import com.appointment.exception.HmsException;
 import com.appointment.service.AppointmentService;
 
-import jakarta.validation.constraints.AssertFalse.List;
 
 @RestController
 @RequestMapping("/appointment")
@@ -61,7 +62,7 @@ public class AppointmentApi {
 	}
 	
 	@GetMapping("/getAllPatientById/{patientId}")
-	public ResponseEntity<java.util.List<AppointmentDetails>> getAllPatientById(@PathVariable Long patientId){
+	public ResponseEntity<List<AppointmentDetails>> getAllPatientById(@PathVariable Long patientId){
 		return new ResponseEntity<>(appointmentService.getAppointmentByPatientId(patientId), HttpStatus.OK);
 	}
 }

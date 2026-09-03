@@ -1,6 +1,5 @@
 package com.appointment.serviceIml;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +14,6 @@ import com.appointment.entity.Appointment;
 import com.appointment.enums.Status;
 import com.appointment.exception.HmsException;
 import com.appointment.reposistory.AppointmentReposistory;
-import com.appointment.service.ApiService;
 import com.appointment.service.AppointmentService;
 
 @Service
@@ -23,7 +21,7 @@ public class AppointmentServiceImpl implements AppointmentService {
 
 	@Autowired
 	private AppointmentReposistory appointmentReposistory;
-	
+
 	@Autowired
 	private ProfileClients profileClients;
 
@@ -63,27 +61,29 @@ public class AppointmentServiceImpl implements AppointmentService {
 
 	@Override
 	public AppointmentDetails getAppointmentwithName(Long appointmentId) throws HmsException {
+
 		AppointmentDto appointmentDto = appointmentReposistory.findById(appointmentId)
 				.orElseThrow(() -> new HmsException("APPOINTMENT-NOT-FOUND")).toDto();
-		//DoctorDto doctor = apiService.getDoctorDetails(appointmentDto.getDoctorId()).block();
-		//PatientDto patient = apiService.getPatientDetails(appointmentDto.getPatientId()).block();
+
 		DoctorDto doctor = profileClients.getDoctor(appointmentDto.getDoctorId());
 		PatientDto patient = profileClients.getPatient(appointmentDto.getPatientId());
+
 		if (doctor == null || patient == null) {
 			throw new HmsException("DOCTOR_OR_PATIENT_DETAILS_NOT_FOUND");
 		}
+
 		AppointmentDetails appointmentDetails = new AppointmentDetails(appointmentDto.getId(),
-				appointmentDto.getPatientId(), patient.getName(), patient.getPhone(), appointmentDto.getDoctorId(),
-				doctor.getName(), appointmentDto.getStatus(), appointmentDto.getReason(), appointmentDto.getNotes(),
-				appointmentDto.getAppointmentTime());
-		
+				appointmentDto.getPatientId(), patient.getName(),
+				patient.getPhone(), appointmentDto.getDoctorId(), doctor.getName(), appointmentDto.getStatus(),
+				appointmentDto.getReason(), appointmentDto.getNotes(), appointmentDto.getAppointmentTime());
+
 		return appointmentDetails;
 	}
 
 	@Override
 	public List<AppointmentDetails> getAppointmentByPatientId(Long patientId) {
 		return appointmentReposistory.findAllByPatientId(patientId).stream().map(appointment -> {
-			DoctorDto doctor = profileClients.getDoctor(appointment.getId());
+			DoctorDto doctor = profileClients.getDoctor(appointment.getDoctorId());
 			appointment.setDoctorName(doctor.getName());
 			return appointment;
 		}).toList();

@@ -22,4 +22,29 @@ public class AppointmentDetails {
 	private String reason;
 	private String notes;
 	private LocalDateTime appointmentTime;
+	
+	public AppointmentDetails(
+	        Long id,
+	        Long patientId,
+	        String patientName,
+	        String patientPhone,
+	        Long doctorId,
+	        String doctorName,
+	        LocalDateTime appointmentTime,
+	        Status status,
+	        String reason,
+	        String notes) {
+
+	    this.id = id;
+	    this.patientId = patientId;
+	    this.patientName = patientName;
+	    this.patientPhone = patientPhone;
+	    this.doctorId = doctorId;
+	    this.doctorName = doctorName;
+	    this.appointmentTime = appointmentTime;
+	    this.status = status;
+	    this.reason = reason;
+	    this.notes = notes;
+	}
+
 }
